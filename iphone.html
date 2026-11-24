@@ -12,7 +12,7 @@
 <main class="wrap">
 <p class="back"><a href="./">‹ MyCar</a></p>
 <h1>Installare MyCar su iPhone</h1>
-<p class="lead">MyCar non è sull'App Store: su iPhone si installa con <strong>SideStore</strong>, un'app gratuita che installa app firmate con il tuo Apple ID. La prima volta servono un computer e circa mezz'ora; dopo, tutto si fa dall'iPhone.</p>
+<p class="lead">MyCar non è sull'App Store: su iPhone si installa con <strong>SideStore</strong>, un'app gratuita che installa app firmate con il tuo Apple ID. La prima volta servono un computer e circa mezz'ora. Dopo, grazie all'app <strong>LocalDevVPN</strong>, tutto si fa dall'iPhone: il computer non serve più.</p>
 
 <h2>Cosa serve</h2>
 <section class="card">
@@ -39,7 +39,7 @@
 <ol>
   <li>Apri <strong>Impostazioni › Generali › VPN e gestione dispositivi</strong>. Sotto «App sviluppatore» tocca il tuo Apple ID, poi <strong>Autorizza</strong> e di nuovo <strong>Autorizza</strong>.</li>
   <li>Da iOS 16 in poi attiva la <strong>Modalità sviluppatore</strong>: <strong>Impostazioni › Privacy e sicurezza</strong>, in fondo, <strong>Modalità sviluppatore</strong> attiva. L'iPhone si riavvia; dopo il riavvio tocca <strong>Attiva</strong> e scrivi il codice. (Se l'opzione non c'è, apri una volta SideStore e torna qui.)</li>
-  <li>Installa dall'App Store <a href="https://apps.apple.com/app/localdevvpn/id6755608044"><strong>LocalDevVPN</strong></a>, aprila e tocca <strong>Connect</strong>. Alla richiesta di aggiungere la VPN tocca <strong>Consenti</strong> e scrivi il codice. Non manda i tuoi dati da nessuna parte: serve solo perché SideStore parli con l'iPhone stesso.</li>
+  <li>Installa dall'App Store <a href="https://apps.apple.com/app/localdevvpn/id6755608044"><strong>LocalDevVPN</strong></a> (gratuita), aprila e tocca <strong>Connect</strong>. Alla richiesta di aggiungere la configurazione VPN tocca <strong>Consenti</strong> e scrivi il codice. È lei che permette a SideStore di installare e rinnovare le app <strong>senza collegare l'iPhone al computer</strong>. Non manda i tuoi dati da nessuna parte: la «VPN» resta dentro il telefono.</li>
   <li>Apri <strong>SideStore</strong> e accedi con lo stesso Apple ID usato in iloader.</li>
   <li>Nella scheda <strong>My Apps</strong> tocca il contatore <strong>7 DAYS</strong> accanto a SideStore. Se chiede di revocare o creare un certificato, tocca <strong>Yes</strong> o <strong>Refresh Now</strong>.</li>
 </ol>
@@ -63,6 +63,23 @@
   <li>Apri <strong>SideStore › My Apps</strong> e tocca il contatore dei giorni accanto a MyCar (o <strong>Refresh All</strong> per tutte).</li>
 </ol>
 <p class="note">Se te ne dimentichi, MyCar non si apre finché non la rinnovi, ma <strong>i tuoi dati restano</strong>: rinnova e riapri. Un promemoria settimanale nel calendario aiuta.</p>
+</section>
+
+<h2>5 · Consigliato: rinnovo automatico con Comandi</h2>
+<section class="card">
+<p>Per non doverti ricordare dei 7 giorni, crea un comando rapido che rinnova tutto da solo e fallo partire ogni giorno.</p>
+<p><strong>Il comando rapido</strong>: apri l'app <strong>Comandi</strong>, scheda <strong>Comandi rapidi</strong>, tocca <strong>+</strong> e aggiungi queste azioni, in quest'ordine (con <strong>Cerca azioni</strong> trovi ognuna per nome):</p>
+<ol>
+  <li><strong>Start LocalDevVPN</strong> (dell'app LocalDevVPN): accende la VPN.</li>
+  <li><strong>Attendi</strong>, impostato a <strong>5 secondi</strong>: la VPN ha bisogno di un attimo per collegarsi.</li>
+  <li><strong>Apri URL</strong>, con l'indirizzo <code>sidestore://</code>: apre SideStore.</li>
+  <li><strong>Refresh All Apps</strong> (dell'app SideStore): rinnova SideStore, MyCar e le altre app.</li>
+  <li><strong>Attendi</strong>, impostato a <strong>30 secondi</strong>: il tempo di finire il rinnovo.</li>
+  <li><strong>Stop LocalDevVPN</strong> (dell'app LocalDevVPN): spegne la VPN.</li>
+</ol>
+<p>Chiamalo per esempio <strong>«Rinnova SideStore»</strong> e provalo una volta toccandolo: alla fine, in SideStore › My Apps, il contatore torna a 7 giorni.</p>
+<p><strong>L'automazione</strong>: sempre in Comandi, scheda <strong>Automazione</strong>, tocca <strong>+</strong> (o <strong>Nuova automazione</strong>), scegli <strong>Ora del giorno</strong>, imposta un'ora in cui di solito usi il telefono ed è sul Wi-Fi (per esempio le 20:00), <strong>Ogni giorno</strong>, poi <strong>Esegui immediatamente</strong>. Tocca <strong>Avanti</strong> e scegli il comando «Rinnova SideStore».</p>
+<p class="note">Il rinnovo riesce solo con l'iPhone sbloccato e sul Wi-Fi: se un giorno non riesce, ci riprova il giorno dopo, e i 7 giorni lasciano margine. Se il comando dà errore, aumenta la prima attesa a 10 secondi. Puoi sempre rinnovare anche a mano come al punto 4.</p>
 </section>
 
 <h2>Aggiornamenti di MyCar</h2>
