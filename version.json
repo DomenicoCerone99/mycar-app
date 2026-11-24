@@ -1,0 +1,6 @@
+{
+  "minBuild": {
+    "android": 10,
+    "ios": 6
+  }
+}
