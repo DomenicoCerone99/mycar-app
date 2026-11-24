@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MyCar · Installare su iPhone</title>
+<meta name="description" content="Come installare MyCar su iPhone con SideStore, passo per passo.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+<p class="back"><a href="./">‹ MyCar</a></p>
+<h1>Installare MyCar su iPhone</h1>
+<p class="lead">MyCar non è sull'App Store: su iPhone si installa con <strong>SideStore</strong>, un'app gratuita che installa app firmate con il tuo Apple ID. La prima volta servono un computer e circa mezz'ora; dopo, tutto si fa dall'iPhone.</p>
+
+<h2>Cosa serve</h2>
+<section class="card">
+<ul>
+  <li>Un iPhone con <strong>iOS 15 o successivo</strong> e il codice di sblocco impostato.</li>
+  <li>Il tuo <strong>Apple ID</strong> (quello normale, gratuito).</li>
+  <li>Un <strong>computer</strong> Mac, Windows o Linux e il <strong>cavo</strong> dell'iPhone, solo per la prima volta.</li>
+  <li>Una rete <strong>Wi-Fi</strong>: con i dati mobili SideStore non funziona.</li>
+</ul>
+</section>
+
+<h2>1 · Sul computer: installa SideStore</h2>
+<section class="card">
+<ol>
+  <li>Scarica e apri <a href="https://iloader.app">iloader</a> (gratuito). Su Windows serve anche iTunes o l'app «Dispositivi Apple» dal Microsoft Store.</li>
+  <li>Collega l'iPhone con il cavo. Se l'iPhone chiede <strong>«Vuoi autorizzare questo computer?»</strong>, tocca <strong>Autorizza</strong> e scrivi il codice.</li>
+  <li>In iloader accedi con il tuo Apple ID (attenzione a maiuscole e minuscole).</li>
+  <li>Scegli il tuo iPhone e tocca <strong>Install SideStore (Stable)</strong>. Aspetta che finisca.</li>
+</ol>
+</section>
+
+<h2>2 · Sull'iPhone: prepara SideStore</h2>
+<section class="card">
+<ol>
+  <li>Apri <strong>Impostazioni › Generali › VPN e gestione dispositivi</strong>. Sotto «App sviluppatore» tocca il tuo Apple ID, poi <strong>Autorizza</strong> e di nuovo <strong>Autorizza</strong>.</li>
+  <li>Da iOS 16 in poi attiva la <strong>Modalità sviluppatore</strong>: <strong>Impostazioni › Privacy e sicurezza</strong>, in fondo, <strong>Modalità sviluppatore</strong> attiva. L'iPhone si riavvia; dopo il riavvio tocca <strong>Attiva</strong> e scrivi il codice. (Se l'opzione non c'è, apri una volta SideStore e torna qui.)</li>
+  <li>Installa dall'App Store <a href="https://apps.apple.com/app/localdevvpn/id6755608044"><strong>LocalDevVPN</strong></a>, aprila e tocca <strong>Connect</strong>. Alla richiesta di aggiungere la VPN tocca <strong>Consenti</strong> e scrivi il codice. Non manda i tuoi dati da nessuna parte: serve solo perché SideStore parli con l'iPhone stesso.</li>
+  <li>Apri <strong>SideStore</strong> e accedi con lo stesso Apple ID usato in iloader.</li>
+  <li>Nella scheda <strong>My Apps</strong> tocca il contatore <strong>7 DAYS</strong> accanto a SideStore. Se chiede di revocare o creare un certificato, tocca <strong>Yes</strong> o <strong>Refresh Now</strong>.</li>
+</ol>
+</section>
+
+<h2>3 · Installa MyCar</h2>
+<section class="card">
+<ol>
+  <li>Sull'iPhone, con Safari, scarica <a href="https://github.com/DomenicoCerone99/mycar-app/releases/latest/download/MyCar.ipa"><strong>MyCar.ipa</strong></a> e tocca <strong>Scarica</strong>. Il file finisce nell'app File, nella cartella <strong>Download</strong>.</li>
+  <li>Controlla che <strong>LocalDevVPN</strong> sia connessa (tocca <strong>Connect</strong> se serve) e di essere sul Wi-Fi.</li>
+  <li>Apri <strong>SideStore</strong>, scheda <strong>My Apps</strong>, tocca <strong>+</strong> in alto e scegli <strong>MyCar.ipa</strong> dalla cartella Download.</li>
+  <li>Aspetta la fine dell'installazione: MyCar compare nella schermata Home. Aprila e aggiungi la tua auto, oppure tocca <strong>«Hai un backup? Ripristinalo»</strong> se arrivi da un altro telefono.</li>
+</ol>
+</section>
+
+<h2>4 · Ogni 7 giorni: rinnova</h2>
+<section class="card">
+<p>Con un Apple ID gratuito Apple fa durare le app installate così <strong>7 giorni</strong>. Prima che scadano:</p>
+<ol>
+  <li>Sul Wi-Fi, apri <strong>LocalDevVPN</strong> e tocca <strong>Connect</strong>.</li>
+  <li>Apri <strong>SideStore › My Apps</strong> e tocca il contatore dei giorni accanto a MyCar (o <strong>Refresh All</strong> per tutte).</li>
+</ol>
+<p class="note">Se te ne dimentichi, MyCar non si apre finché non la rinnovi, ma <strong>i tuoi dati restano</strong>: rinnova e riapri. Un promemoria settimanale nel calendario aiuta.</p>
+</section>
+
+<h2>Aggiornamenti di MyCar</h2>
+<section class="card">
+<ul>
+  <li>Gli aggiornamenti normali arrivano <strong>da soli</strong>: MyCar ti dice «Riavvia per aggiornare».</li>
+  <li>Se un giorno serve una versione completa nuova, MyCar te lo dice. Scarica di nuovo MyCar.ipa da questa pagina e installala da SideStore come al punto 3: va <strong>sopra quella che hai e i dati restano</strong>. Fai comunque prima il backup da Impostazioni › Backup.</li>
+</ul>
+</section>
+
+<h2>Se qualcosa non va</h2>
+<section class="card">
+<ul>
+  <li><strong>Errori di connessione</strong> («No Wi-Fi or VPN Connection», «AFC Connection Failure»): controlla Wi-Fi e LocalDevVPN connessa, disattiva eventuali blocchi pubblicità o DNS, chiudi e riapri SideStore e poi LocalDevVPN. Se non basta, riavvia l'iPhone.</li>
+  <li><strong>Dopo un aggiornamento di iOS non funziona più</strong>: il file di abbinamento va rifatto. Collega l'iPhone al computer, apri iloader, tocca <strong>Delete Stored Pairing</strong>, scegli l'iPhone e tocca <strong>Autorizza</strong> sull'iPhone, poi <strong>Manage Pairing File</strong> e <strong>Place</strong> accanto a SideStore.</li>
+  <li><strong>Troppe app</strong>: con un Apple ID gratuito puoi avere al massimo <strong>3 app</strong> installate con SideStore, SideStore compresa.</li>
+  <li><strong>Il codice di verifica Apple non arriva</strong>: su un tuo dispositivo Apple vai in <strong>Impostazioni › il tuo nome › Accesso e sicurezza › Ottieni un codice di verifica</strong>.</li>
+</ul>
+<p class="note">SideStore è un progetto indipendente, non di MyCar. La guida ufficiale completa, in inglese, è su <a href="https://docs.sidestore.io/docs/installation/prerequisites">docs.sidestore.io</a>. Per problemi con MyCar <a href="https://github.com/DomenicoCerone99/mycar-app/issues">scrivi qui</a>.</p>
+</section>
+
+<footer>
+  <p><a href="./">‹ Torna a MyCar</a> · <a href="privacy.html">Privacy e condizioni</a></p>
+</footer>
+</main>
+</body>
+</html>

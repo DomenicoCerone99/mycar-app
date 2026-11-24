@@ -21,7 +21,7 @@
 
 <div class="buttons">
   <a class="button" id="get-android" href="https://github.com/DomenicoCerone99/mycar-app/releases/latest/download/MyCar.apk">Scarica per Android</a>
-  <a class="button outline" id="get-iphone" href="#iphone">iPhone</a>
+  <a class="button outline" id="get-iphone" href="iphone.html">iPhone</a>
 </div>
 <p class="note" id="get-note">Android 7 o successivo. Gli aggiornamenti arrivano dentro l'app.</p>
 <script>
@@ -39,7 +39,7 @@
     android.className = 'button outline';
     iphone.parentNode.insertBefore(iphone, android);
     document.getElementById('get-note').textContent =
-      "Su iPhone si installa con SideStore: tocca il tasto per i passi e il file MyCar.ipa.";
+      "Su iPhone si installa con SideStore: il tasto apre la guida passo per passo.";
   })();
 </script>
 
@@ -72,13 +72,11 @@
 
 <h2 id="iphone">Installare su iPhone</h2>
 <section class="card">
-<p>MyCar non è sull'App Store. Su iPhone si installa con <strong>SideStore</strong>, gratuito, che firma l'app con il tuo Apple ID.</p>
-<ol>
-  <li>Installa SideStore seguendo la guida ufficiale: <a href="https://docs.sidestore.io/">docs.sidestore.io</a>. Serve un computer, Mac o Windows, solo la prima volta.</li>
-  <li>Sull'iPhone scarica <a href="https://github.com/DomenicoCerone99/mycar-app/releases/latest/download/MyCar.ipa"><strong>MyCar.ipa</strong></a>.</li>
-  <li>Apri SideStore, tocca <strong>+</strong> in «My Apps» e scegli il file MyCar.ipa.</li>
-</ol>
-<p class="note">Con un Apple ID gratuito SideStore va rinnovato ogni 7 giorni, sempre dall'iPhone. Gli aggiornamenti piccoli di MyCar arrivano dentro l'app, come su Android.</p>
+<p>MyCar non è sull'App Store: su iPhone si installa con <strong>SideStore</strong>, gratuito, con il tuo Apple ID. La prima volta serve un computer; poi ogni 7 giorni si rinnova dall'iPhone.</p>
+<div class="buttons">
+  <a class="button" href="iphone.html">Guida passo per passo</a>
+  <a class="button outline" href="https://github.com/DomenicoCerone99/mycar-app/releases/latest/download/MyCar.ipa">Scarica MyCar.ipa</a>
+</div>
 </section>
 
 <h2>I tuoi dati</h2>
