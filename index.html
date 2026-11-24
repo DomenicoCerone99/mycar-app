@@ -20,10 +20,28 @@
 <p class="lead">Bollo, assicurazione, revisione e tagliando con gli avvisi prima della scadenza. Rifornimenti e consumi, manutenzioni, documenti dell'auto, prezzi dei carburanti vicino a te e dove hai parcheggiato. I dati restano sul tuo telefono.</p>
 
 <div class="buttons">
-  <a class="button" href="https://github.com/DomenicoCerone99/mycar-app/releases/latest/download/MyCar.apk">Scarica per Android</a>
-  <a class="button outline" href="#iphone">iPhone</a>
+  <a class="button" id="get-android" href="https://github.com/DomenicoCerone99/mycar-app/releases/latest/download/MyCar.apk">Scarica per Android</a>
+  <a class="button outline" id="get-iphone" href="#iphone">iPhone</a>
 </div>
-<p class="note">Android 7 o successivo. Gli aggiornamenti arrivano dentro l'app.</p>
+<p class="note" id="get-note">Android 7 o successivo. Gli aggiornamenti arrivano dentro l'app.</p>
+<script>
+  // From an iPhone or iPad: the iPhone way first, the APK second.
+  (function () {
+    var ua = navigator.userAgent;
+    var ios = /iPhone|iPad|iPod/.test(ua) ||
+      (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    if (!ios) return;
+    var android = document.getElementById('get-android');
+    var iphone = document.getElementById('get-iphone');
+    iphone.textContent = 'Installa su iPhone';
+    iphone.className = 'button';
+    android.textContent = 'Android';
+    android.className = 'button outline';
+    iphone.parentNode.insertBefore(iphone, android);
+    document.getElementById('get-note').textContent =
+      "Su iPhone si installa con SideStore: tocca il tasto per i passi e il file MyCar.ipa.";
+  })();
+</script>
 
 <div class="shots">
   <img src="shots/panoramica.png" alt="Panoramica dell'auto con km, scadenze e azioni rapide" width="600" height="1300">
